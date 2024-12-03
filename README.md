@@ -1,86 +1,90 @@
-# Lung-Cancer-Prediciion
-Predict the Patient has Lung Cancer probability or not using Hybrid Model(LogisticRegression and XGBoost)
 # Lung Cancer Prediction Application
 
-## Overview
-This is a Streamlit-based machine learning application that predicts lung cancer risk using multiple classification models.
+## 🩺 Overview
+This Streamlit-powered machine learning application provides an advanced lung cancer risk assessment tool. By leveraging multiple sophisticated classification models, the application analyzes various patient health parameters to estimate lung cancer probability.
 
-## Requirements
+## 🚀 Features
+
+### Predictive Models
+- **Logistic Regression**: A classic statistical modeling technique
+- **XGBoost**: An advanced gradient boosting algorithm
+- **Hybrid Voting Classifier**: Combines multiple models for enhanced accuracy
+
+### Comprehensive Analysis
+- Interactive risk prediction interface
+- Detailed model performance metrics
+- Advanced data visualizations
+  - Feature importance charts
+  - Correlation heatmaps
+  - Model fit plots
+  - Prediction distribution analysis
+
+## ⚙️ Requirements
 - Python 3.8+
-- Libraries:
-  - streamlit
-  - pandas
-  - scikit-learn
-  - xgboost
-  - seaborn
-  - matplotlib
+- Libraries listed in `requirements.txt`
 
-## Installation
-1. Clone the repository
-2. Install required dependencies:
+## 🔧 Installation
+
+### 1. Clone the Repository
 ```bash
-pip install streamlit pandas scikit-learn xgboost seaborn matplotlib
+git clone https://github.com/Pranamya16/Lung-Cancer-Prediction.git
+cd Lung-Cancer-Prediction
 ```
 
-## Project Structure
-- `prediction.py`: Main Streamlit application script
-- `surveylungcancer.csv`: Dataset containing lung cancer survey data
+### 2. Create Virtual Environment (Optional but Recommended)
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+```
 
-## Features
-- Interactive web interface for lung cancer risk prediction
-- Multiple machine learning models:
-  - Logistic Regression
-  - XGBoost
-  - Hybrid Voting Classifier
-- Comprehensive model performance metrics
-- Feature importance visualization
-- Correlation heatmap
-- Prediction distribution charts
+### 3. Install Dependencies
+```bash
+pip install -r requirements.txt
+```
 
-## How to Run
+## 🏃 Running the Application
 ```bash
 streamlit run prediction.py
 ```
 
-## Model Performance
-The application uses three models:
-- Logistic Regression
-- XGBoost
-- Hybrid Voting Classifier
+## 📊 Risk Categories
+The application classifies lung cancer risk into four categories:
+- **Critical Risk**: > 75% probability
+- **High Risk**: > 50% probability
+- **Moderate Risk**: > 25% probability
+- **Low Risk**: ≤ 25% probability
 
-Each model's accuracy is displayed in the application.
+## 🔍 Input Features
+The model considers 15 critical health parameters:
+1. Gender
+2. Age
+3. Smoking status
+4. Yellow fingers
+5. Anxiety levels
+6. Peer pressure
+7. Chronic disease
+8. Fatigue
+9. Allergies
+10. Wheezing
+11. Alcohol consumption
+12. Coughing
+13. Shortness of breath
+14. Swallowing difficulty
+15. Chest pain
 
-## Input Features
-- Gender
-- Age
-- Smoking status
-- Yellow fingers
-- Anxiety
-- Peer pressure
-- Chronic disease
-- Fatigue
-- Allergy
-- Wheezing
-- Alcohol consumption
-- Coughing
-- Shortness of breath
-- Swallowing difficulty
-- Chest pain
+## 📈 Visualizations
+- Model Fit Plots
+- Feature Importance Graph
+- Feature Correlation Heatmap
+- Prediction Distribution Chart
 
-## Risk Categories
-- Critical Risk: Probability > 75%
-- High Risk: Probability > 50%
-- Moderate Risk: Probability > 25%
-- Low Risk: Probability ≤ 25%
+## ⚠️ Medical Disclaimer
+**Important**: This application is a predictive tool for educational and screening purposes. It is not a substitute for professional medical diagnosis. Always consult healthcare professionals for accurate medical advice and comprehensive evaluation.
 
-## Visualizations
-1. Model Fit Plots
-2. Feature Importance
-3. Feature Correlation Heatmap
-4. Prediction Distribution
+## 👥 Contributing
+Contributions, issues, and feature requests are welcome! Feel free to check the issues page.
 
-## Disclaimer
-This is a predictive tool and should not replace professional medical advice. Always consult healthcare professionals for accurate diagnosis.
 
-## Authors
+
+## 👨‍💻 Author
 Pranamya Deshpande
