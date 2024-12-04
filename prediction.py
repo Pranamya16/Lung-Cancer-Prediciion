@@ -9,6 +9,9 @@ from sklearn.metrics import accuracy_score
 import seaborn as sns
 import matplotlib.pyplot as plt
 import xgboost as xgb
+# Add this at the very top, after imports
+st.set_page_config(page_title="Lung Cancer Predictor", page_icon="🫁")
+
 # Load dataset
 data_path = "surveylungcancer.csv"
 if os.path.exists(data_path):
@@ -25,7 +28,8 @@ data["LUNG_CANCER"] = (data["LUNG_CANCER"] == "YES").astype(int)
 
 # Convert GENDER to numeric (M=1, F=0)
 data["GENDER"] = (data["GENDER"] == "M").astype(int)
-
+st.title("Lung Cancer Prediction")
+st.caption("By Pranamya Deshpande")
 # Create sidebar for user input
 st.sidebar.title("Patient Information")
 
@@ -50,8 +54,6 @@ swallowing_difficulty = st.sidebar.selectbox(
 )
 chest_pain = st.sidebar.selectbox("Chest Pain", options=["No", "Yes"])
 
-# Main content area title
-st.title("Lung Cancer Prediction")
 
 # Convert input to DataFrame with correct numeric values
 input_data = pd.DataFrame(
