@@ -1,4 +1,4 @@
-# Lung Cancer Prediction Application
+# Lung Cancer Risk Prediction Application
 
 ## 🩺 Overview
 This Streamlit-powered machine learning application provides an advanced lung cancer risk assessment tool. By leveraging multiple sophisticated classification models, the application analyzes various patient health parameters to estimate lung cancer probability.
@@ -29,8 +29,8 @@ Click here to try: https://lung-cancer-prediction-by-pranamya.streamlit.app
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/Pranamya16/Lung-Cancer-Prediction.git
-cd Lung-Cancer-Prediction
+git clone https://github.com/Pranamya16/Lung-Cancer-Risk-Prediction.git
+cd Lung-Cancer-Risk-Prediction
 ```
 
 ### 2. Create Virtual Environment (Optional but Recommended)
