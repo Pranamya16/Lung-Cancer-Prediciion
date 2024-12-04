@@ -3,7 +3,7 @@
 ## 🩺 Overview
 This Streamlit-powered machine learning application provides an advanced lung cancer risk assessment tool. By leveraging multiple sophisticated classification models, the application analyzes various patient health parameters to estimate lung cancer probability.
 
-Click here to try: https://lung-cancer-prediction-by-pranamya.streamlit.app
+Click here to try: https://lung-cancer-risk-prediction-by-pranamya.streamlit.app
 
 ## 🚀 Features
 
